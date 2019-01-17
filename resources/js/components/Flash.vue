@@ -7,12 +7,14 @@
 <script>
     export default {
         props: ['message'],
+        
         data(){
             return {
                 body: '',
                 show: false
             }
         },
+        
         created(){
             if(this.message){
                 this.flash(this.message);

@@ -30,10 +30,10 @@ Vue.prototype.authorize = function(handler){
 }
 
 /*Vue components*/
-Vue.component('flash', require('./components/Flash.vue'));
+Vue.component('flash', require('./components/Flash.vue').default);
 
 /*Vue pages*/
-Vue.component('thread-view', require('./pages/Thread.vue'));
+Vue.component('thread-view', require('./pages/Thread.vue').default);
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key)))
