@@ -38,7 +38,6 @@
                         <p class="text-justify">{{ $thread->body }}</p>
                     </div>
                 </div>
-
                 <replies @added="repliesCount++" @removed="repliesCount--"></replies>
 
                 {{-- {{ $replies->links() }} --}}

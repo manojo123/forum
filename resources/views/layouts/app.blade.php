@@ -6,7 +6,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="hostname" content="{{ config('app.url') }}">    
+    <meta name="hostname" content="{{ url('/') }}">    
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
