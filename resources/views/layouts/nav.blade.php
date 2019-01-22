@@ -13,7 +13,9 @@
                         @if(auth()->check())
                         <a class="dropdown-item" href="{{ url('threads?by='.auth()->user()->name) }}">My Threads</a>
                         @endif
+
                         <a class="dropdown-item" href="{{ url('threads?popular=1') }}">Popular Threads</a>
+                        <a class="dropdown-item" href="{{ url('threads?unanswered=1') }}">Unanswered Threads</a>
                     </div>
                 </li>
             </ul>

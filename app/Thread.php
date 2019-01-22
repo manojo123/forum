@@ -14,15 +14,12 @@ class Thread extends Model
 
     protected $guarded = [];
     protected $with = ['creator', 'channel'];
-	protected $withCount = ['replies'];
 
     protected static function boot(){
         parent::boot();
 
         static::deleting(function($thread){
-            $thread->replies->each(function($reply){
-                $reply->delete();
-            });
+            $thread->replies->each->delete();
         });
     }
 
